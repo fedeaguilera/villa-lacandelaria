@@ -1,18 +1,28 @@
-import { FC } from "react";
+import { FC, Dispatch, SetStateAction } from "react";
+import { motion } from "framer-motion";
 import Menu from "./Menu";
+import MenuResponsive from "./MenuResponsive";
 
+interface HeaderProps {
+  open: boolean;
+  setOpen: Dispatch<SetStateAction<boolean>>;
+}
 
-interface HeaderProps {}
-
-const Header: FC<HeaderProps> = () => {
+const Header: FC<HeaderProps> = ({ open, setOpen }) => {
   return (
-    <header className="bg-secondary min-h-header z-50 fixed w-full flex justify-evenly items-center  text-primary ">
+    <motion.header
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      className="bg-secondary min-h-header z-50 fixed w-full flex flex-col md:flex-row justify-evenly items-center  text-primary "
+    >
       <div className="">
-        <h1 className="font-title text-5xl lg:text-6xl ">Villa La Candelaria</h1>
+        <h1 className="font-title text-5xl ">
+          Villa La Candelaria
+        </h1>
       </div>
-      <Menu/>
-
-    </header>
+      <MenuResponsive open={open} setOpen={setOpen} />
+      <Menu />
+    </motion.header>
   );
 };
 

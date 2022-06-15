@@ -1,22 +1,29 @@
-import type { NextPage } from 'next'
-import Header from '../components/index/header/Header'
-import Gallery from '../components/index/main/gallery/Gallery'
-import Hero from '../components/index/main/hero/Hero'
-import Introduction from '../components/index/main/presentation/Introduction'
-import Around from '../components/index/main/around/Around'
+import type { NextPage } from "next";
+import Header from "../components/index/header/Header";
+import { Dispatch, SetStateAction, useState } from "react";
 
+import Hero from "../components/index/main/hero/Hero";
+import Introduction from "../components/index/main/presentation/Introduction";
 
-const Home: NextPage = () => {
-  return (
-    <main className=" min-h-screen ">
-      <Header/>
-     <Hero/>
-     <Introduction/>
-     <Gallery/>
-     <Around/>
+import AsideResponsive from "../components/index/header/AsideResponsiveMenu";
+import Services from "../components/index/main/services/Services";
 
-    </main>
-  )
+export interface MenuProps {
+  open: boolean;
+  setOpen: Dispatch<SetStateAction<boolean>>;
 }
 
-export default Home
+const Home: NextPage = () => {
+  const [open, setOpen] = useState(false);
+  return (
+    <main className="">
+      <Header open={open} setOpen={setOpen} />
+      <AsideResponsive open={open} setOpen={setOpen} />
+      <Hero />
+      <Introduction />
+      <Services />
+    </main>
+  );
+};
+
+export default Home;
