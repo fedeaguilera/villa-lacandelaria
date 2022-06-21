@@ -1,6 +1,6 @@
 import { FunctionComponent } from "react";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { motion, useSpring } from "framer-motion";
+
+import { motion } from "framer-motion";
 
 const title = {
   visible: { opacity: 1, x: 0 },

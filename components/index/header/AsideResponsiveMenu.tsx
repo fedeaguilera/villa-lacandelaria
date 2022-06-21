@@ -33,7 +33,7 @@ const AsideResponsive: React.FC<AsideProps> = ({ open, setOpen }) => {
       {open && (
         <motion.aside
           className="w-full bg-secondary min-h-screen fixed mt-10 z-50"
-          initial={{ x: -300, y: 70 }}
+          initial={{ x: -300, y: 55 }}
           animate={{
             x: 0,
           }}
