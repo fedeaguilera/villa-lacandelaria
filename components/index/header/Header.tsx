@@ -12,7 +12,7 @@ const Header: FC<HeaderProps> = ({ open, setOpen }) => {
   return (
     <motion.header
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
+      animate={{ opacity: 0.87 }}
       className="bg-secondary min-h-header z-50 fixed w-full flex flex-col md:flex-row justify-evenly items-center  text-primary "
     >
       <div className="">

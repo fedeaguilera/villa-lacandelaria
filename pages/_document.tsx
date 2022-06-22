@@ -28,7 +28,7 @@ class MyDocument extends Document {
         <body className="font-body">
           <Main />
           <NextScript />
-          
+          <Footer/>
         </body>
       </Html>
     );
