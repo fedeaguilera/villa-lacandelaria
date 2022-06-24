@@ -1,5 +1,6 @@
 import { AnimatePresence, Variants, motion } from "framer-motion";
 import { FunctionComponent } from "react";
+import Description from "./Description";
 import Gallery from "./Gallery";
 import Logos from "./Logos";
 
@@ -61,12 +62,13 @@ const Services: FunctionComponent<ServicesProps> = () => {
 					initial="hidden"
 					whileInView="visible"
 					viewport={{ once: true, amount: 0.8 }}
-					className=" pt-20 text-6xl text-center text-gallery"
+					className=" pt-20 text-5xl md:text-6xl text-center text-gallery"
 				>
-					Nuestras instalaciones
+					NUESTRAS INSTALACIONES
 				</motion.h3>
 				<div className="w-full h-2/5 relative flex flex-col justify-center items-center mt-10">
 					<Gallery />
+					<Description />
 					<Logos />
 				</div>
 			</motion.section>

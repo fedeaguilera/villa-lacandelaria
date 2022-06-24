@@ -50,29 +50,29 @@ const logo1: Variants = {
 const Logos: FunctionComponent<LogosProps> = () => {
 	return (
 		<AnimatePresence>
-			<div className="mt-14 w-11/12 pb-10">
+			<div className="mt-14 w-11/12 pb-10 flex flex-col justify-center items-center  ">
 				<motion.h4
 					variants={tittle}
 					initial="hidden"
 					whileInView="visible"
 					viewport={{ once: true, amount: 0.9 }}
-					className="text-3xl text-secondary text-center md:text-left"
+					className="text-3xl text-secondary text-center md:text-left w-full"
 				>
 					Servicios y Amenities
 				</motion.h4>
-				<div className="flex w-1/3 md:w-2/3 h-2/6 mx-auto flex-wrap  py-5 justify-center items-center">
+				<div className="flex w-3/4 flex-wrap  py-5 justify-center items-center mr-10">
 					<motion.div
 						variants={logo1}
 						initial="hidden"
 						whileInView="visible"
 						viewport={{ once: true, amount: 0.9 }}
-						className="group w-full md:w-1/6 flex flex-col justify-center items-center mt-5"
+						className="group w-full md:w-1/6 flex md:flex-col justify-center items-center mt-5"
 					>
-						<div className="w-2/3 flex justify-center items-center group-hover:scale-110 group-focus:scale-110 duration 500">
-							<FcWiFiLogo size="5em" />
+						<div className="w-2/3  flex justify-center items-center group-hover:scale-110">
+							<FcWiFiLogo size="3em" />
 						</div>
-						<span className="text-center text-lg font-semibold text-secondary  opacity-0 group-hover:opacity-100 group-focus:opacity-100 duration-300 ">
-							Internet - Wifi
+						<span className="w-1/3 md:w-full text-center text-lg font-semibold text-secondary opacity-100  md:opacity-0 group-hover:opacity-100  duration-300 ">
+							Internet
 						</span>
 					</motion.div>
 					<motion.div
@@ -80,12 +80,12 @@ const Logos: FunctionComponent<LogosProps> = () => {
 						initial="hidden"
 						whileInView="visible"
 						viewport={{ once: true, amount: 0.9 }}
-						className="group w-full md:w-1/6 flex flex-col justify-center items-center mt-5"
+						className="group w-full md:w-1/6 flex md:flex-col justify-center items-center mt-5"
 					>
-						<div className="w-2/3 flex justify-center items-center group-hover:scale-110 group-focus:scale-110 duration 500 ">
-							<MdPool size="5em" />
+						<div className="w-2/3 flex justify-center items-center group-hover:scale-110 ">
+							<MdPool size="3em" />
 						</div>
-						<span className="text-center text-lg font-semibold text-secondary opacity-0 group-hover:opacity-100 group-focus:opacity-100 duration-300">
+						<span className="w-1/3 text-center text-lg font-semibold text-secondary opacity-100  md:opacity-0 group-hover:opacity-100  duration-300">
 							Pileta
 						</span>
 					</motion.div>
@@ -94,13 +94,12 @@ const Logos: FunctionComponent<LogosProps> = () => {
 						initial="hidden"
 						whileInView="visible"
 						viewport={{ once: true, amount: 0.9 }}
-						className="group w-full md:w-1/6 flex flex-col justify-center items-center mt-5"
+						className="group w-full md:w-1/6 flex md:flex-col justify-center items-center mt-5"
 					>
-						<div className="w-2/3 flex justify-center items-center group-hover:scale-110 group-focus:scale-110 duration 500">
-							<MdBed size="5em" />
+						<div className="w-2/3 flex justify-center items-center  group-hover:scale-110">
+							<MdBed size="3em" />
 						</div>
-						<span className="text-center text-lg font-semibold text-secondary  opacity-0 group-hover:opacity-100 group-focus:opacity-100 duration-300  ">
-							{" "}
+						<span className="w-1/3 md:w-full text-center text-lg font-semibold text-secondary opacity-100  md:opacity-0 group-hover:opacity-100  duration-300">
 							Sommier
 						</span>
 					</motion.div>
@@ -109,12 +108,12 @@ const Logos: FunctionComponent<LogosProps> = () => {
 						initial="hidden"
 						whileInView="visible"
 						viewport={{ once: true, amount: 0.9 }}
-						className="group w-full md:w-1/6 flex flex-col justify-center items-center mt-5"
+						className="group w-full md:w-1/6 flex md:flex-col justify-center items-center mt-5"
 					>
-						<div className="w-2/3 flex justify-center items-center group-hover:scale-110 group-focus:scale-110 duration 500">
-							<MdOutdoorGrill size="5em" />
+						<div className="w-2/3 flex justify-center items-center  group-hover:scale-110">
+							<MdOutdoorGrill size="3em" />
 						</div>
-						<span className="text-center text-lg font-semibold text-secondary  opacity-0 group-hover:opacity-100 group-focus:opacity-100 duration-300  ">
+						<span className="w-1/3 md:w-full text-center text-lg font-semibold text-secondary opacity-100  md:opacity-0 group-hover:opacity-100  duration-300  ">
 							Parrilla
 						</span>
 					</motion.div>
@@ -123,12 +122,12 @@ const Logos: FunctionComponent<LogosProps> = () => {
 						initial="hidden"
 						whileInView="visible"
 						viewport={{ once: true, amount: 0.9 }}
-						className=" group w-full md:w-1/6 flex flex-col justify-center items-center mt-5"
+						className=" group w-full md:w-1/6 flex md:flex-col justify-center items-center mt-5"
 					>
-						<div className="w-2/3 flex justify-center items-center group-hover:scale-110 group-focus:scale-110 duration 500">
-							<MdOutlinePets size="5em" />
+						<div className="w-2/3 flex justify-center items-center group-hover:scale-110 ">
+							<MdOutlinePets size="3em" />
 						</div>
-						<span className="text-center text-lg font-semibold text-secondary  opacity-0 group-hover:opacity-100 group-focus:opacity-100 duration-300 ">
+						<span className="w-1/3 md:w-full text-center text-lg font-semibold text-secondary opacity-100  md:opacity-0 group-hover:opacity-100  duration-300 ">
 							Pet Friendly
 						</span>
 					</motion.div>
@@ -137,12 +136,12 @@ const Logos: FunctionComponent<LogosProps> = () => {
 						initial="hidden"
 						whileInView="visible"
 						viewport={{ once: true, amount: 0.9 }}
-						className="group w-full md:w-1/6 flex flex-col justify-center items-center mt-5"
+						className="group w-full md:w-1/6 flex md:flex-col justify-center items-center mt-5"
 					>
-						<div className="w-2/3 flex justify-center items-center group-hover:scale-110 group-focus:scale-110 duration 500">
-							<MdOutlineShower size="5em" />
+						<div className="w-2/3 flex justify-center items-center group-hover:scale-110">
+							<MdOutlineShower size="3em" />
 						</div>
-						<span className="text-center text-lg font-semibold text-secondary  opacity-0 group-hover:opacity-100 group-focus:opacity-100 duration-300 ">
+						<span className="w-1/3 md:w-full text-center text-lg font-semibold text-secondary opacity-100  md:opacity-0 group-hover:opacity-100  duration-300 ">
 							Agua caliente
 						</span>
 					</motion.div>
@@ -151,12 +150,12 @@ const Logos: FunctionComponent<LogosProps> = () => {
 						initial="hidden"
 						whileInView="visible"
 						viewport={{ once: true, amount: 0.9 }}
-						className=" group w-full md:w-1/6 flex flex-col justify-center items-center mt-5"
+						className=" group w-full md:w-1/6 flex md:flex-col justify-center items-center mt-5"
 					>
-						<div className="w-2/3 flex justify-center items-center group-hover:scale-110 group-focus:scale-110 duration 500">
-							<MdTv size="5em" />
+						<div className="w-2/3 flex justify-center items-center group-hover:scale-110">
+							<MdTv size="3em" />
 						</div>
-						<span className="text-center text-lg font-semibold text-secondary  opacity-0 group-hover:opacity-100 group-focus:opacity-100 duration-300 ">
+						<span className="w-1/3 md:w-full text-center text-lg font-semibold text-secondary opacity-100  md:opacity-0 group-hover:opacity-100  duration-300 ">
 							DirecTV
 						</span>
 					</motion.div>
@@ -165,12 +164,12 @@ const Logos: FunctionComponent<LogosProps> = () => {
 						initial="hidden"
 						whileInView="visible"
 						viewport={{ once: true, amount: 0.9 }}
-						className=" group w-full md:w-1/6 flex flex-col justify-center items-center mt-5"
+						className=" group w-full md:w-1/6 flex md:flex-col justify-center items-center mt-5"
 					>
-						<div className="w-2/3 flex justify-center items-center group-hover:scale-110 group-focus:scale-110 duration 500">
-							<Image src={Calefactor} />
+						<div className="w-2/3 flex justify-center items-center group-hover:scale-110 duration 500">
+							<Image src={Calefactor} width={48} height={48} />
 						</div>
-						<span className="text-center text-lg font-semibold text-secondary  opacity-0 group-hover:opacity-100 group-focus:opacity-100 duration-300 ">
+						<span className="w-1/3 md:w-full text-center text-lg font-semibold text-secondary opacity-100  md:opacity-0 group-hover:opacity-100 mt-2  duration-300 ">
 							Calefactor{" "}
 						</span>
 					</motion.div>
@@ -179,12 +178,12 @@ const Logos: FunctionComponent<LogosProps> = () => {
 						initial="hidden"
 						whileInView="visible"
 						viewport={{ once: true, amount: 0.9 }}
-						className=" group w-full md:w-1/6 flex flex-col justify-center items-center mt-5"
+						className=" group w-full md:w-1/6 flex md:flex-col justify-center items-center mt-5"
 					>
-						<div className="w-2/3 flex justify-center items-center group-hover:scale-110 group-focus:scale-110 duration 500">
-							<Image src={Limpieza} />
+						<div className="w-2/3 md:w-1/2 flex justify-center items-center group-hover:scale-110 group-focus:scale-110 duration 500">
+							<Image src={Limpieza} width={48} height={48} />
 						</div>
-						<span className="text-center text-lg font-semibold text-secondary  opacity-0 group-hover:opacity-100 group-focus:opacity-100 duration-300  ">
+						<span className="w-1/3 md:w-full text-right md:text-center text-lg font-semibold text-secondary opacity-100  md:opacity-0 group-hover:opacity-100  duration-300 mt-2  ">
 							Ropa Blanca{" "}
 						</span>
 					</motion.div>
