@@ -23,7 +23,7 @@ const Home: NextPage = () => {
 			<Hero />
 			<Introduction />
 			<Services />
-			<ContactForm />
+			{/* <ContactForm /> */}
 		</main>
 	);
 };
