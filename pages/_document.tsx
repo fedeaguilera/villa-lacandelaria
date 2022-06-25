@@ -45,7 +45,13 @@ class MyDocument extends Document {
 						type="text/css"
 						href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
 					/>
-					<title>Villa La Candelaria</title>
+					<title>Villa La Candelaria - Sierra de Los Padres</title>
+					<meta
+						name="description"
+						content="Casa en alquiler ubicada en Sierra de los Padres , Mar del Plata,. Contamos con una casa con cuatro habitaciones , amplio parque , parrila y pileta."
+					/>
+					<meta name="robots" content="index, follow"></meta>
+					<meta name="author" content="Aguidev web Developer" />
 				</Head>
 				<body className="font-body">
 					<WhatsAppIcon />
