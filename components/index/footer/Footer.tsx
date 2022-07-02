@@ -4,7 +4,7 @@ interface FooterProps {}
 
 const Footer: FunctionComponent<FooterProps> = () => {
 	return (
-		<footer className=" mt-10 px-3 py-8 bg-secondary text-primary text-2 0 transition-colors duration-200">
+		<footer className="pt-10 px-3 py-8 bg-secondary text-primary text-2 0 transition-colors duration-200">
 			<div className="flex flex-col">
 				<div className="md:hidden mt-7 mx-auto w-11 h-px rounded-full"></div>
 				<div className="mt-4 md:mt-0 flex flex-col md:flex-row">
@@ -45,7 +45,7 @@ const Footer: FunctionComponent<FooterProps> = () => {
 							<FaWhatsapp size="2em" />
 						</a>
 					</div>
-					<div className="md:hidden mt-4 mx-auto w-11 h-px rounded-full "></div>
+					<div className="md:hidden mt-4 mx-auto w-full h-px rounded-full "></div>
 					<div className="mt-7 md:mt-0 flex-1 flex flex-col items-center justify-center md:items-start md:pl-5">
 						<span className="">© 2022</span>
 						<span className="mt-7 md:mt-1">
