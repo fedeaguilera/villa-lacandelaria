@@ -57,7 +57,7 @@ const Introduction: FunctionComponent<IntroductionProps> = () => {
 			<motion.section className="min-h-screen">
 				<div className="px-4 py-16 mx-auto  sm:px-6 lg:px-8">
 					<div className="grid grid-cols-1 lg:grid-cols-2 lg:h-screen">
-						<div className=" z-10 lg:py-16">
+						<div className="relative z-10 lg:py-16">
 							<motion.div
 								variants={image}
 								initial="hidden"
@@ -84,9 +84,9 @@ const Introduction: FunctionComponent<IntroductionProps> = () => {
 									initial="hidden"
 									whileInView="visible"
 									viewport={{ once: true, amount: 0.8 }}
-									className="text-6xl text-center text-gallery"
+									className="text-5xl text-center text-gallery"
 								>
-									¡Bienvenidos!{" "}
+									¡Bienvenidos!
 								</motion.h3>
 
 								<motion.p
