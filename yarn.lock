@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@avidian/react-modal-image@^2.5.2":
+  version "2.5.2"
+  resolved "https://registry.yarnpkg.com/@avidian/react-modal-image/-/react-modal-image-2.5.2.tgz#d60bffd5081c0f0c12cab96cc152664933ded669"
+  integrity sha512-sUBeaF5aE86Day3zRahFM9aXKr7MMMGwoACmFjHNvXP1aykLnpfMGV3qY+6woVjm0n2FOS8YCjkM8t3YCrK5KA==
+
 "@babel/code-frame@7.12.11":
   version "7.12.11"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.12.11.tgz#f4ad435aa263db935b8f10f2c552d23fb716a63f"

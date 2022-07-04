@@ -54,54 +54,59 @@ const title: Variants = {
 const Introduction: FunctionComponent<IntroductionProps> = () => {
 	return (
 		<AnimatePresence>
-			<motion.section className="mx-auto min-h-screen">
-				<motion.h3
-					variants={title}
-					initial="hidden"
-					whileInView="visible"
-					viewport={{ once: true, amount: 0.8 }}
-					className=" pt-20 text-6xl text-center text-gallery"
-				>
-					¡Bienvenidos!{" "}
-				</motion.h3>
+			<motion.section className="min-h-screen">
+				<div className="px-4 py-16 mx-auto  sm:px-6 lg:px-8">
+					<div className="grid grid-cols-1 lg:grid-cols-2 lg:h-screen">
+						<div className=" z-10 lg:py-16">
+							<motion.div
+								variants={image}
+								initial="hidden"
+								whileInView="visible"
+								viewport={{ once: true, amount: 0.8 }}
+								className="relative h-64 sm:h-80 lg:h-full"
+							>
+								<Image
+									className="rounded-xl"
+									objectPosition="center"
+									objectFit="contain"
+									src={picture}
+									alt="Ingreso a Sierra de Los Padres"
+								></Image>
+							</motion.div>
+						</div>
 
-				<div className="flex flex-col md:flex-row justify-center items-center md:p-8 md:mt-6  ">
-					<motion.div className="w-full  p-6 rounded-md flex  justify-center items-center ">
-						<motion.p
-							variants={paragraph}
-							initial="hidden"
-							whileInView="visible"
-							viewport={{ once: true, amount: 0.8 }}
-							className="text-xl text-center text-test font-semibold w-3/4"
-						>
-							El lugar se encuentra ubicado en Sierra de los Padres, a tan solo
-							13 km de la ciudad balnearia de Mar del Plata. Descanse en un
-							lugar diferente, donde la naturaleza y el aire de las sierras se
-							hacen presentes. Los invitamos a a una experiencia inolvidable en
-							un ambiente natural y relajado. Lorem ipsum dolor sit amet,
-							consectetur adipisicing elit. Nisi possimus quia ab facere,
-							pariatur velit, molestias atque magni quam dolorem assumenda
-							quibusdam esse dolores eius dolore distinctio quos necessitatibus?
-							Modi? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Incidunt vero, quo rem natus praesentium veniam, excepturi
-							consectetur repellendus, magnam dolore reiciendis! Assumenda,
-							ratione harum. Facere rem nemo eaque veritatis iusto!
-						</motion.p>
-					</motion.div>
-					<motion.div
-						variants={image}
-						initial="hidden"
-						whileInView="visible"
-						viewport={{ once: true, amount: 0.8 }}
-						className="flex justify-center items-center p-4 md:w-3/4"
-					>
-						<Image
-							objectPosition="center"
-							objectFit="contain"
-							src={picture}
-							alt="Ingreso a Sierra de Los Padres"
-						></Image>
-					</motion.div>
+						<div className="relative flex items-center bg-gray-100">
+							<span className="hidden lg:inset-y-0 lg:absolute lg:w-16 lg:bg-gray-100 lg:block lg:-left-16"></span>
+
+							<div className="p-8 sm:p-16 lg:p-24">
+								<motion.h3
+									variants={title}
+									initial="hidden"
+									whileInView="visible"
+									viewport={{ once: true, amount: 0.8 }}
+									className="text-6xl text-center text-gallery"
+								>
+									¡Bienvenidos!{" "}
+								</motion.h3>
+
+								<motion.p
+									variants={paragraph}
+									initial="hidden"
+									whileInView="visible"
+									viewport={{ once: true, amount: 0.8 }}
+									className="text-xl text-center text-test font-semibold mt-8 "
+								>
+									El lugar se encuentra ubicado en Sierra de los Padres, a tan
+									solo 13 km de la ciudad balnearia de Mar del Plata. Descanse
+									en un lugar diferente, donde la naturaleza y el aire de las
+									sierras se hacen presentes. Los invitamos a a una experiencia
+									inolvidable en un ambiente natural y relajado. Lorem ipsum
+									dolor sit amet, consectetur adipisicing elit. Nisi possimus
+									quia ab facere, pariatur velit, molestias atque magni quam
+								</motion.p>
+							</div>
+						</div>
+					</div>
 				</div>
 			</motion.section>
 		</AnimatePresence>

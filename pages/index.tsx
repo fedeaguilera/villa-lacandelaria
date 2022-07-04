@@ -27,9 +27,9 @@ const Home: NextPage = () => {
 			<Hero />
 			<Introduction />
 			<Services />
+			<Around />
 			<ContactForm loading={loading} setLoading={setLoading} />
 			{loading ? <Loading /> : null}
-			<Around />
 		</main>
 	);
 };

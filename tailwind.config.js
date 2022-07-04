@@ -29,6 +29,9 @@ module.exports = {
 				header: "15vh",
 				area: "20vh",
 			},
+			height: {
+				header: "15vh",
+			},
 		},
 	},
 	plugins: [],

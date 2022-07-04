@@ -32,8 +32,8 @@ const AsideResponsive: React.FC<AsideProps> = ({ open, setOpen }) => {
 		<AnimatePresence>
 			{open && (
 				<motion.aside
-					className="w-full bg-secondary min-h-screen fixed mt-10 z-50 opacity-90"
-					initial={{ x: -300, y: 100 }}
+					className="w-full bg-secondary min-h-screen fixed  z-50 opacity-90"
+					initial={{ x: -300, y: "25.05vh" }}
 					animate={{
 						x: 0,
 					}}
@@ -72,29 +72,13 @@ const AsideResponsive: React.FC<AsideProps> = ({ open, setOpen }) => {
 						>
 							<Link
 								activeClass="active"
-								to="about"
-								smooth={true}
-								duration={3000}
-								offset={-100}
-								onClick={() => setOpen(false)}
-							>
-								Servicios
-							</Link>
-						</motion.div>
-						<motion.div
-							className="p-2 mt-2  cursor-pointer"
-							whileHover={{ scale: 1.1 }}
-							variants={itemVariants}
-						>
-							<Link
-								activeClass="active"
-								to="skill"
+								to="house"
 								smooth={true}
 								duration={3000}
 								offset={-150}
 								onClick={() => setOpen(false)}
 							>
-								Reservas
+								Nuestro Lugar
 							</Link>
 						</motion.div>
 						<motion.div
@@ -104,10 +88,26 @@ const AsideResponsive: React.FC<AsideProps> = ({ open, setOpen }) => {
 						>
 							<Link
 								activeClass="active"
-								to="portafolio"
+								to="around"
 								smooth={true}
 								duration={3000}
-								offset={50}
+								offset={-180}
+								onClick={() => setOpen(false)}
+							>
+								Alrededores
+							</Link>
+						</motion.div>
+						<motion.div
+							className="p-2 mt-2  cursor-pointer"
+							whileHover={{ scale: 1.1 }}
+							variants={itemVariants}
+						>
+							<Link
+								activeClass="active"
+								to="contact"
+								smooth={true}
+								duration={3000}
+								offset={-100}
 								onClick={() => setOpen(false)}
 							>
 								Contacto

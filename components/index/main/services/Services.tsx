@@ -56,17 +56,20 @@ const title: Variants = {
 const Services: FunctionComponent<ServicesProps> = () => {
 	return (
 		<AnimatePresence>
-			<motion.section className="w-screen min-h-screen mt-16 bg-primary">
+			<motion.section
+				className="w-screen min-h-screen mt-16 bg-gradient-to-b from-cyan-100 via-lightBlue-500 to-lightBlue-500"
+				id="house"
+			>
 				<motion.h3
 					variants={title}
 					initial="hidden"
 					whileInView="visible"
 					viewport={{ once: true, amount: 0.8 }}
-					className=" pt-20 text-5xl md:text-6xl text-center text-gallery"
+					className=" pt-28 text-5xl md:text-6xl text-center text-gallery"
 				>
 					NUESTRAS INSTALACIONES
 				</motion.h3>
-				<div className="w-full h-2/5 relative flex flex-col justify-center items-center mt-10">
+				<div className="w-full h-2/5  flex flex-col justify-center items-center mt-10 ">
 					<Gallery />
 					<Description />
 					<Logos />
