@@ -37,12 +37,12 @@ const Hero: FunctionComponent<HeroProps> = () => {
 	return (
 		<section className="min-h-screen  text-primary" id="home">
 			<div className="min-h-screen w-full">
-				<div className="bg-hero bg-no-repeat bg-center bg-cover min-h-screen flex flex-col items-center justify-center">
+				<div className=" bg-hero bg-no-repeat bg-center bg-cover min-h-screen flex flex-col items-center justify-center">
 					<motion.h2
 						initial="hidden"
 						animate="visible"
 						variants={title}
-						className="text-5xl text-center md:text-6xl"
+						className="md:mt-0 mt-12 text-4xl text-center md:text-6xl"
 					>
 						{" "}
 						Bienvenidos a Villa la Candelaria
@@ -51,18 +51,21 @@ const Hero: FunctionComponent<HeroProps> = () => {
 						initial="hidden"
 						animate="visible"
 						variants={subtitle}
-						className="text-3xl md:text-4xl text-center my-10"
+						className="text-2xl md:text-4xl text-center my-10"
 					>
 						Experimente un lugar diferente de descanso rodeado de naturaleza
 					</motion.p>
-					<motion.button
+					<motion.a
 						initial="hidden"
 						animate="visible"
 						variants={button}
+						href="https://api.whatsapp.com/send?phone=+542236635207&text=Hola,%20me%20gustar%C3%ADa%20averiguar%20precios%20y%20disponibilidad%20para..."
+						target="_blank"
+						rel="noopener noreferrer"
 						className="rounded-2xl font-bold bg-gallery  p-6 text-2xl transition-all hover:bg-white hover:text-gallery"
 					>
 						Reserva
-					</motion.button>
+					</motion.a>
 				</div>
 			</div>
 		</section>

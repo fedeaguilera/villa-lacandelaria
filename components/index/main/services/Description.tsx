@@ -25,7 +25,7 @@ const Description: FunctionComponent<DescriptionProps> = () => {
 				variants={paragraph}
 				initial="hidden"
 				whileInView="visible"
-				viewport={{ once: true, amount: 0.8 }}
+				viewport={{ once: true, amount: 0.9, margin: "-5px" }}
 				className="w-2/3 mt-10 text-xl font-body text-justify"
 			>
 				<p>

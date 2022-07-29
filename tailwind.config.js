@@ -12,7 +12,7 @@ module.exports = {
 
 		extend: {
 			backgroundImage: {
-				hero: "linear-gradient(to right bottom , rgba(34,49,63,.7),rgba(34,49,63,.7)), url('/hero.jpg')",
+				hero: "linear-gradient(to right bottom , rgba(34,49,63,.5),rgba(34,49,63,.5)), url('/hero.jpg')",
 			},
 			colors: {
 				primary: "#D2ECF9",

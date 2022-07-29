@@ -1,14 +1,15 @@
 import { AnimatePresence, motion, Variants } from "framer-motion";
+import Image from "next/image";
 import { FunctionComponent } from "react";
 import Slider from "react-slick";
 
 export const images = [
-	"https://d33wubrfki0l68.cloudfront.net/dd23708ebc4053551bb33e18b7174e73b6e1710b/dea24/static/images/wallpapers/shared-colors@2x.png",
-	"https://d33wubrfki0l68.cloudfront.net/49de349d12db851952c5556f3c637ca772745316/cfc56/static/images/wallpapers/bridge-02@2x.png",
-	"https://d33wubrfki0l68.cloudfront.net/594de66469079c21fc54c14db0591305a1198dd6/3f4b1/static/images/wallpapers/bridge-01@2x.png",
-	"https://d33wubrfki0l68.cloudfront.net/dd23708ebc4053551bb33e18b7174e73b6e1710b/dea24/static/images/wallpapers/shared-colors@2x.png",
-	"https://d33wubrfki0l68.cloudfront.net/49de349d12db851952c5556f3c637ca772745316/cfc56/static/images/wallpapers/bridge-02@2x.png",
-	"https://d33wubrfki0l68.cloudfront.net/594de66469079c21fc54c14db0591305a1198dd6/3f4b1/static/images/wallpapers/bridge-01@2x.png",
+	"/casa_2.jpg",
+	"/casa_3.jpg",
+	"/casa_4.jpg",
+	"/casa_5.jpg",
+	"/casa_6.jpg",
+	"/casa_7.jpg",
 ];
 
 const settings = {
@@ -75,7 +76,7 @@ const Gallery: FunctionComponent = () => {
 				<Slider {...settings} className="">
 					{images.map((image, index) => (
 						<div key={index} className="p-5">
-							<img src={image} width="1024" height="468" />
+							<Image src={image} width="1024" height="600" />
 						</div>
 					))}
 				</Slider>

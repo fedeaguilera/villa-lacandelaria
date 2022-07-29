@@ -1,6 +1,6 @@
 import { FunctionComponent } from "react";
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
-
+import { Link } from "react-scroll";
 interface FooterProps {}
 
 const Footer: FunctionComponent<FooterProps> = () => {
@@ -10,41 +10,48 @@ const Footer: FunctionComponent<FooterProps> = () => {
 				<div className="md:hidden mt-7 mx-auto w-11 h-px rounded-full"></div>
 				<div className="mt-4 md:mt-0 flex flex-col md:flex-row">
 					<nav className="flex-1 flex flex-col items-center justify-center md:items-end md:border-r border-gray-100 md:pr-5">
-						<a
-							aria-current="page"
-							href="#"
-							className="hover:text-gray-700 dark:hover:text-white"
+						<Link
+							className="hover:text-gray-700 dark:hover:text-white cursor-pointer"
+							activeClass="active"
+							to="home"
+							smooth={true}
+							duration={3000}
 						>
 							Inicio
-						</a>
-						<a
-							aria-current="page"
-							href="#"
-							className="hover:text-gray-700 dark:hover:text-white"
+						</Link>
+						<Link
+							className="hover:text-gray-700 dark:hover:text-white cursor-pointer"
+							to="house"
+							smooth={true}
+							duration={3000}
 						>
-							Nuestro Lugar
-						</a>
-						<a
-							aria-current="page"
-							href="#"
-							className="hover:text-gray-700 dark:hover:text-white"
+							Nuestro lugar
+						</Link>
+						<Link
+							className="hover:text-gray-700 dark:hover:text-white cursor-pointer"
+							activeClass="active"
+							to="around"
+							smooth={true}
+							duration={3000}
 						>
 							Alrededores
-						</a>
-						<a
-							aria-current="page"
-							href="#"
-							className="hover:text-gray-700 dark:hover:text-white"
+						</Link>
+						<Link
+							className="hover:text-gray-700 dark:hover:text-white cursor-pointer"
+							activeClass="active"
+							to="contact"
+							smooth={true}
+							duration={3000}
 						>
 							Contacto
-						</a>
+						</Link>
 					</nav>
 					<div className="md:hidden mt-4 mx-auto w-11 h-px rounded-full"></div>
 					<div className="mt-4 md:mt-0 flex-1 flex flex-col items-center justify-center md:border-r border-gray-100">
 						<div className="flex-1 flex items-center justify-center">
 							<a
 								className="hover:text-primary-gray-20"
-								href="#"
+								href="https://www.instagram.com/villa_la_candelaria"
 								target="_blank"
 								rel="noopener noreferrer"
 							>

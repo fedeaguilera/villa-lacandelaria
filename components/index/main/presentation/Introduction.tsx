@@ -1,7 +1,7 @@
 import { FunctionComponent } from "react";
 import { AnimatePresence, motion, Variants } from "framer-motion";
 import Image from "next/image";
-import picture from "../../../../public/sierra_4.jpg";
+import picture from "../../../../public/intro.jpg";
 
 interface IntroductionProps {}
 

@@ -156,7 +156,7 @@ const Logos: FunctionComponent<LogosProps> = () => {
 							<MdTv size="3em" />
 						</div>
 						<span className="w-1/3 md:w-full text-center text-lg font-semibold text-secondary opacity-100  md:opacity-0 group-hover:opacity-100  duration-300 ">
-							DirecTV
+							Flow
 						</span>
 					</motion.div>
 					<motion.div

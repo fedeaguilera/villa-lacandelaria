@@ -45,6 +45,7 @@ class MyDocument extends Document {
 						type="text/css"
 						href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
 					/>
+
 					<title>Villa La Candelaria - Sierra de Los Padres</title>
 					<meta
 						name="description"

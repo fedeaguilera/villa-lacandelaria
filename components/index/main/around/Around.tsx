@@ -1,5 +1,6 @@
 import ModalImage from "@avidian/react-modal-image";
 import { AnimatePresence, motion, Variants } from "framer-motion";
+import Image from "next/image";
 
 interface AroundProps {}
 const title: Variants = {
@@ -78,8 +79,8 @@ const Around: React.FunctionComponent<AroundProps> = () => {
 							<div className="w-1/2 p-1 md:p-2 rounded-lg border-primary border-2">
 								<ModalImage
 									className="block object-cover object-center w-full h-full rounded-lg"
-									small="/sierra_1.jpg"
-									large="/sierra_1.jpg"
+									small="/around_2.jpg"
+									large="/around_2.jpg"
 									alt="Vista de la sierras"
 								/>
 							</div>
@@ -87,16 +88,16 @@ const Around: React.FunctionComponent<AroundProps> = () => {
 								<ModalImage
 									alt="Gruta de los Pañuelos"
 									className="block object-cover object-center w-full h-full rounded-lg"
-									small="/sierra_2.jpg"
-									large="/sierra_2.jpg"
+									small="/around_3.jpg"
+									large="/around_3.jpg"
 								/>
 							</div>
 							<div className="w-full p-1 md:p-2  rounded-lg border-primary border-2">
 								<ModalImage
-									alt="Laguna de los Padres"
+									alt="Gruta de los Pañuelos"
 									className="block object-cover object-center w-full h-full rounded-lg"
-									small="/laguna.jpg"
-									large="/laguna.jpg"
+									small="/around.jpg"
+									large="/around.jpg"
 								/>
 							</div>
 						</div>
@@ -113,16 +114,16 @@ const Around: React.FunctionComponent<AroundProps> = () => {
 								<ModalImage
 									alt="Misiones Jesuitas"
 									className="block object-cover object-center w-full h-full rounded-lg"
-									small="/sierra_3.jpg"
-									large="/sierra_3.jpg"
+									small="/around_4.jpg"
+									large="/around_4.jpg"
 								/>
 							</div>
 							<div className="w-1/2 p-1 md:p-2  rounded-lg border-primary border-2">
 								<ModalImage
 									alt="Acceso a sierra"
 									className="block object-cover object-center w-full h-full rounded-lg"
-									small="sierra_4.jpg"
-									large="/sierra_4.jpg"
+									small="/around_5.jpg"
+									large="/around_5.jpg"
 								/>
 							</div>
 						</div>
