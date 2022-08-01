@@ -45,7 +45,10 @@ class MyDocument extends Document {
 						type="text/css"
 						href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
 					/>
-
+					<link
+						href="https://api.tiles.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.css"
+						rel="stylesheet"
+					/>
 					<title>Villa La Candelaria - Sierra de Los Padres</title>
 					<meta
 						name="description"

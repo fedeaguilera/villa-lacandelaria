@@ -363,7 +363,7 @@
   resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.182.tgz#05301a4d5e62963227eaafe0ce04dd77c54ea5c2"
   integrity sha512-/THyiqyQAP9AfARo4pF+aCGcyiQ94tX/Is2I7HofNRqoYLgN1PBoOWu2/zTA5zMxzP5EFutMtWtGAFRKUe961Q==
 
-"@types/mapbox-gl@^2.7.4":
+"@types/mapbox-gl@^2.6.0", "@types/mapbox-gl@^2.7.4":
   version "2.7.4"
   resolved "https://registry.yarnpkg.com/@types/mapbox-gl/-/mapbox-gl-2.7.4.tgz#fbbb72a3fc0a1e0c2fbd7952d23418e51cdea77d"
   integrity sha512-usTVCWYhmLt+teQ5U3HhSBZIIHFLp6fQXH/1QOnd4xnDtvNTUWo8n6UyRA4kUj84CGpHSBFeF/MNcBdGB1pwog==
@@ -3167,6 +3167,13 @@ react-is@^16.7.0, react-is@^16.8.1:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
+
+react-map-gl@^7.0.18:
+  version "7.0.18"
+  resolved "https://registry.yarnpkg.com/react-map-gl/-/react-map-gl-7.0.18.tgz#832319ad33152526827108634738e760b912ee1f"
+  integrity sha512-GLiupp35BNPPFpgz3pYWU4lLt3qzHFPQSVBkOco7RrRnG2EpIj8sKogG8YZHbd+pHIHIZJOLa2pOwKLoaoAZGA==
+  dependencies:
+    "@types/mapbox-gl" "^2.6.0"
 
 react-merge-refs@^1.1.0:
   version "1.1.0"

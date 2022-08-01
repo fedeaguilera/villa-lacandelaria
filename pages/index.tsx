@@ -10,6 +10,8 @@ import Services from "../components/index/main/services/Services";
 import ContactForm from "../components/index/main/ContactForm/ContactForm";
 import Loading from "../components/index/main/loading/Loading";
 import Around from "../components/index/main/around/Around";
+import MapFooter from "../components/index/footer/MapFooter";
+import MapSection from "../components/index/main/Map/MapSection";
 
 export interface MenuProps {
 	open: boolean;
@@ -29,6 +31,7 @@ const Home: NextPage = () => {
 			<Services />
 			<Around />
 			<ContactForm loading={loading} setLoading={setLoading} />
+			<MapSection />
 			{loading ? <Loading /> : null}
 		</main>
 	);
