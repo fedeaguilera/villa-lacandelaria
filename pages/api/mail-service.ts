@@ -12,12 +12,15 @@ export default function handler(
 	req: NextApiRequest,
 	res: NextApiResponse<Data>
 ) {
+	console.log(SENGRID);
+	console.log(process.env.SENGRID);
+
 	const { fullname, phone, email, message } = req.body;
 	sgMail.setApiKey(SENGRID);
 
 	const mail: MailDataRequired = {
-		to: "info@villalacandelaria",
-		from: "info@villalacandelaria",
+		to: "info@villalacandelaria.com.ar",
+		from: "info@villalacandelaria.com.ar",
 		text: message,
 		subject: `Formulario Web ${fullname} Telefono: ${phone} Correo : ${email}`,
 	};
