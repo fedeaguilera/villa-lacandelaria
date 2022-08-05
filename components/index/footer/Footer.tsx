@@ -60,7 +60,7 @@ const Footer: FunctionComponent<FooterProps> = () => {
 							</a>
 							<a
 								className="ml-4 hover:text-primary-gray-20"
-								href="https://api.whatsapp.com/send?phone=+542236635207&text=Hola,%20me%20gustar%C3%ADa%20averiguar%20precios%20y%20disponibilidad%20para..."
+								href="https://api.whatsapp.com/send?phone=+542235780917&text=Hola,%20me%20gustar%C3%ADa%20averiguar%20precios%20y%20disponibilidad%20para..."
 								target="_blank"
 								rel="noopener noreferrer"
 							>
@@ -83,7 +83,8 @@ const Footer: FunctionComponent<FooterProps> = () => {
 								target="_blank"
 								rel="noopener noreferrer"
 							>
-								{}Aguidev
+								{" "}
+								Aguidev
 							</a>
 						</span>
 					</div>

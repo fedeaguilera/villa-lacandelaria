@@ -10,22 +10,12 @@ npm run dev
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3001](http://localhost:3001) with your browser to see the result.
 
 ENJOY THIS WEBSITE
 
-## Learn More
+## ENVIRORMENT VARIABLES
 
-To learn more about Next.js, take a look at the following resources:
+This Web App need :
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy 
-
-RUN DOCKER-COMPOSE FILE ON YOUR VPS
-
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+SENGRID : put the Api Key to send email

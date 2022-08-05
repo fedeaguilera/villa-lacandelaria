@@ -49,13 +49,21 @@ class MyDocument extends Document {
 						href="https://api.tiles.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.css"
 						rel="stylesheet"
 					/>
-					<title>Villa La Candelaria - Sierra de Los Padres</title>
+
 					<meta
 						name="description"
 						content="Casa en alquiler ubicada en Sierra de los Padres , Mar del Plata,. Contamos con una casa con cuatro habitaciones , amplio parque , parrila y pileta."
 					/>
 					<meta name="robots" content="index, follow"></meta>
 					<meta name="author" content="Aguidev web Developer" />
+					<meta property="og:site_name" content="Villa La Candelaria" />
+					<meta property="og:title" content="Villa la Candelaria" />
+					<meta
+						property="og:description"
+						content="Alquiler de casa en Sierra de Los Padres - Mar del Plata - Pileta - Parrilla"
+					/>
+					<meta property="og:image" itemProp="image" content="/logo.png" />
+					<meta property="og:type" content="website" />
 				</Head>
 				<body className="font-body">
 					<WhatsAppIcon />

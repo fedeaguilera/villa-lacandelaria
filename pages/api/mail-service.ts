@@ -14,11 +14,10 @@ export default function handler(
 ) {
 	const { fullname, phone, email, message } = req.body;
 	sgMail.setApiKey(SENGRID);
-	console.log(req.body);
 
 	const mail: MailDataRequired = {
-		to: "faguilera@aguidev.com.ar",
-		from: "faguilera@aguidev.com.ar",
+		to: "info@villalacandelaria",
+		from: "info@villalacandelaria",
 		text: message,
 		subject: `Formulario Web ${fullname} Telefono: ${phone} Correo : ${email}`,
 	};

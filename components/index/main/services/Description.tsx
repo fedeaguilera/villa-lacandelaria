@@ -26,20 +26,19 @@ const Description: FunctionComponent<DescriptionProps> = () => {
 				initial="hidden"
 				whileInView="visible"
 				viewport={{ once: true, amount: 0.9, margin: "-5px" }}
-				className="w-2/3 mt-10 text-xl font-body text-justify"
+				className="w-2/3 mt-10 text-xl font-body text-justify text-test"
 			>
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas enim
-					quidem animi quia, voluptates voluptatibus cupiditate alias dolorum
-					nulla dolores, deserunt sed incidunt quibusdam illo nisi? Expedita
-					pariatur beatae necessitatibus. Lorem ipsum dolor sit amet,
-					consectetur adipisicing elit. Quasi dicta, recusandae, at debitis
-					temporibus similique, aliquid quaerat porro necessitatibus odit illo
-					iste veniam praesentium voluptas unde quo adipisci quam labore. Lorem
-					ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, quae,
-					omnis consectetur ducimus voluptatibus quos odit quo odio culpa nobis
-					rerum accusantium voluptatem totam corporis dignissimos libero.
-					Placeat, cum ducimus?{" "}
+					Villa La Candelaria, es una casa serrana implantada sobre un lote de
+					460 m2, de 120 m2; construida en 2 plantas con ambientes comodos.- En
+					planta baja accedemos a un quincho equipado con cocina completa con
+					hogar a leña; baño completo y una habitación matrimonial, Wi-Fi;
+					Android TV.- En su planta alta se accede a un play room con juegos de
+					mesa, baño completo; una habitación matrimonial y una habitación con
+					divan cama.- En su exterior Villa La Candelaria posee un amplio parque
+					con variedad de vegetación autóctona, arboles y arbustos.- Cuenta con
+					sector de metegol; sector de parrilla, disco, asador; horno de barro;
+					mesa de ping-pong y piscina.-{" "}
 				</p>
 			</motion.div>
 		</AnimatePresence>

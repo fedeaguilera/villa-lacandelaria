@@ -96,13 +96,18 @@ const Introduction: FunctionComponent<IntroductionProps> = () => {
 									viewport={{ once: true, amount: 0.8 }}
 									className="text-xl text-center text-test font-semibold mt-8 "
 								>
-									El lugar se encuentra ubicado en Sierra de los Padres, a tan
-									solo 13 km de la ciudad balnearia de Mar del Plata. Descanse
-									en un lugar diferente, donde la naturaleza y el aire de las
-									sierras se hacen presentes. Los invitamos a a una experiencia
-									inolvidable en un ambiente natural y relajado. Lorem ipsum
-									dolor sit amet, consectetur adipisicing elit. Nisi possimus
-									quia ab facere, pariatur velit, molestias atque magni quam
+									El lugar se encuentra ubicado en Sierra de los Padres,
+									localidad del Partido General Pueyrredon, Provincia de Buenos
+									Aires, a tan solo 13 km de la ciudad balnearia de Mar del
+									Plata. Lugar único para el descanso, disfrutar de sus
+									paisajes, tranquilidad y armonía con la naturaleza.- La
+									geografía de la localidad es sumamente atractiva debido a la
+									forma particular de trazado de las calles que siguen
+									aproximadamente los accidentes del terreno, proporcionando
+									vistas hermosas a colinas y valles.Descanse en un lugar
+									diferente, donde la naturaleza y el aire de las sierras se
+									hacen presentes. Los invitamos a a una experiencia inolvidable
+									en un ambiente natural y relajado.
 								</motion.p>
 							</div>
 						</div>

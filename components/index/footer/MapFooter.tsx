@@ -10,7 +10,7 @@ const MapFooter: React.FunctionComponent<MapProps> = () => {
 				latitude: -37.9492283,
 				zoom: 12,
 			}}
-			style={{ width: "85%", height: 400, padding: "" }}
+			style={{ width: "75%", height: 400, padding: "" }}
 			mapStyle="mapbox://styles/mapbox/streets-v9"
 			mapboxAccessToken="pk.eyJ1IjoiZmVkZTE5IiwiYSI6ImNsNjZtbzRiMzFnMTMzYnJ4bzBpYXExNTkifQ.vXjhfpooWjLe-wC3HbL5qA"
 		>
