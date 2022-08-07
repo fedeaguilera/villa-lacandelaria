@@ -138,7 +138,7 @@ const Around: React.FunctionComponent<AroundProps> = () => {
 				>
 					<p className="text-justify text-xl text-test font-semibold">
 						A tan solo unos minutos se encuentra la Reserva Natural Municipal
-						Lagunda de los Padres.Dentro de la misma se encuentra el Museo
+						Laguna de los Padres.Dentro de la misma se encuentra el Museo
 						Tradicionalista José Hernández, donde vivió el autor del Martín
 						Fierro y la escuela de Educación Secundaria Agraria Nro. 1. Sobre
 						las costas de la laguna hay distintos centros recreativos, como el
