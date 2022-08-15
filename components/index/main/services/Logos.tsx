@@ -167,7 +167,12 @@ const Logos: FunctionComponent<LogosProps> = () => {
 						className=" group w-full md:w-1/6 flex md:flex-col justify-center items-center mt-5"
 					>
 						<div className="w-2/3 flex justify-center items-center group-hover:scale-110 duration 500">
-							<Image src={Calefactor} width={48} height={48} />
+							<Image
+								src={Calefactor}
+								width={48}
+								height={48}
+								alt="Calefaccion gas natural"
+							/>
 						</div>
 						<span className="w-1/3 md:w-full text-center text-lg font-semibold text-secondary opacity-100  md:opacity-0 group-hover:opacity-100 mt-2  duration-300 ">
 							Calefactor{" "}
@@ -181,7 +186,7 @@ const Logos: FunctionComponent<LogosProps> = () => {
 						className=" group w-full md:w-1/6 flex md:flex-col justify-center items-center mt-5"
 					>
 						<div className="w-2/3 md:w-1/2 flex justify-center items-center group-hover:scale-110 group-focus:scale-110 duration 500">
-							<Image src={Limpieza} width={48} height={48} />
+							<Image src={Limpieza} width={48} height={48} alt="Ropa Blanca" />
 						</div>
 						<span className="w-1/3 md:w-full text-right md:text-center text-lg font-semibold text-secondary opacity-100  md:opacity-0 group-hover:opacity-100  duration-300 mt-2  ">
 							Ropa Blanca{" "}

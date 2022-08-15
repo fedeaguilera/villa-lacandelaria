@@ -1,5 +1,6 @@
 import { AnimatePresence, motion, Variants } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import { FunctionComponent } from "react";
 import Slider from "react-slick";
 
@@ -76,7 +77,15 @@ const Gallery: FunctionComponent = () => {
 				<Slider {...settings} className="">
 					{images.map((image, index) => (
 						<div key={index} className="p-5">
-							<Image src={image} width="1024" height="600" />
+							<Link href={`${image}`} passHref>
+								<Image
+									src={image}
+									width="1024"
+									height="600"
+									layout="responsive"
+									alt={image}
+								/>
+							</Link>
 						</div>
 					))}
 				</Slider>

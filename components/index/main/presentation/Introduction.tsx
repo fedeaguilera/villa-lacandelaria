@@ -100,13 +100,13 @@ const Introduction: FunctionComponent<IntroductionProps> = () => {
 									localidad del Partido General Pueyrredon, Provincia de Buenos
 									Aires, a tan solo 13 km de la ciudad balnearia de Mar del
 									Plata. Lugar único para el descanso, disfrutar de sus
-									paisajes, tranquilidad y armonía con la naturaleza.- La
+									paisajes, tranquilidad y armonía con la naturaleza. La
 									geografía de la localidad es sumamente atractiva debido a la
 									forma particular de trazado de las calles que siguen
 									aproximadamente los accidentes del terreno, proporcionando
-									vistas hermosas a colinas y valles.Descanse en un lugar
+									vistas hermosas a colinas y valles. Descanse en un lugar
 									diferente, donde la naturaleza y el aire de las sierras se
-									hacen presentes. Los invitamos a a una experiencia inolvidable
+									hacen presentes. Los invitamos a una experiencia inolvidable
 									en un ambiente natural y relajado.
 								</motion.p>
 							</div>

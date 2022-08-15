@@ -1,6 +1,7 @@
 import ModalImage from "@avidian/react-modal-image";
 import { AnimatePresence, motion, Variants } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 interface AroundProps {}
 const title: Variants = {
@@ -76,55 +77,79 @@ const Around: React.FunctionComponent<AroundProps> = () => {
 				>
 					<div className="flex flex-wrap -m-1 md:-m-2">
 						<div className="flex flex-wrap w-1/2">
-							<div className="w-1/2 p-1 md:p-2 rounded-lg border-primary border-2">
-								<ModalImage
-									className="block object-cover object-center w-full h-full rounded-lg"
-									small="/around_2.jpg"
-									large="/around_2.jpg"
-									alt="Vista de la sierras"
-								/>
+							<div className="w-1/2 p-1 md:p-2 rounded-lg border-primary relative">
+								<Link href={"/around_2.jpg"} passHref>
+									<Image
+										className="block object-cover object-center p-1 w-full h-full rounded-lg"
+										src="/around_2.jpg"
+										alt="Vista de la sierras"
+										layout="responsive"
+										height={900}
+										width={1200}
+									/>
+								</Link>
 							</div>
-							<div className="w-1/2 p-1 md:p-2  rounded-lg border-primary border-2">
-								<ModalImage
-									alt="Gruta de los Pañuelos"
-									className="block object-cover object-center w-full h-full rounded-lg"
-									small="/around_3.jpg"
-									large="/around_3.jpg"
-								/>
+							<div className="w-1/2 p-1 md:p-2  rounded-lg border-primary border-2 relative">
+								<Link href={"/around_3.jpg"} passHref>
+									<Image
+										className="block object-cover object-center p-1  h-full rounded-lg"
+										src="/around_3.jpg"
+										alt="Gruta de los pañuelos vista"
+										layout="responsive"
+										width={1200}
+										height={900}
+									/>
+								</Link>
 							</div>
-							<div className="w-full p-1 md:p-2  rounded-lg border-primary border-2">
-								<ModalImage
-									alt="Gruta de los Pañuelos"
-									className="block object-cover object-center w-full h-full rounded-lg"
-									small="/around.jpg"
-									large="/around.jpg"
-								/>
+							<div className="w-full p-1 md:p-2  rounded-lg border-primary border-2 relative">
+								<Link href={"/around.jpg"} passHref>
+									<Image
+										className="block object-cover object-center p-1 w-full h-full rounded-lg"
+										src="/around.jpg"
+										alt="Vista de la sierras"
+										layout="responsive"
+										width={1200}
+										height={900}
+									/>
+								</Link>
 							</div>
 						</div>
 						<div className="flex flex-wrap w-1/2">
-							<div className="w-full p-1 md:p-2  rounded-lg border-primary border-2">
-								<ModalImage
-									alt="Laguna de los Padres"
-									className="block object-cover object-center w-full h-full rounded-lg"
-									small="/laguna_2.jpg"
-									large="/laguna_2.jpg"
-								/>
+							<div className="w-full p-1 md:p-2  rounded-lg border-primary border-2 relative">
+								<Link href={"/laguna_2.jpg"} passHref>
+									<Image
+										className="block object-cover object-center p-1  h-full rounded-lg"
+										src="/laguna_2.jpg"
+										alt="Gruta de los pañuelos vista"
+										layout="responsive"
+										width={1200}
+										height={900}
+									/>
+								</Link>
 							</div>
-							<div className="w-1/2 p-1 md:p-2  rounded-lg border-primary border-2">
-								<ModalImage
-									alt="Misiones Jesuitas"
-									className="block object-cover object-center w-full h-full rounded-lg"
-									small="/around_4.jpg"
-									large="/around_4.jpg"
-								/>
+							<div className="w-1/2 p-1 md:p-2  rounded-lg border-primary border-2 relative">
+								<Link href={"/around_4.jpg"} passHref>
+									<Image
+										className="block object-cover object-center p-1  h-full rounded-lg"
+										src="/around_4.jpg"
+										alt="Gruta de los pañuelos vista"
+										layout="responsive"
+										width={1200}
+										height={900}
+									/>
+								</Link>
 							</div>
-							<div className="w-1/2 p-1 md:p-2  rounded-lg border-primary border-2">
-								<ModalImage
-									alt="Acceso a sierra"
-									className="block object-cover object-center w-full h-full rounded-lg"
-									small="/around_5.jpg"
-									large="/around_5.jpg"
-								/>
+							<div className="w-1/2 p-1 md:p-2  rounded-lg border-primary border-2 relative">
+								<Link href={"/around_5.jpg"} passHref>
+									<Image
+										className="block object-cover object-center p-1  h-full rounded-lg"
+										src="/around_5.jpg"
+										alt="Gruta de los pañuelos vista"
+										layout="responsive"
+										width={1200}
+										height={900}
+									/>
+								</Link>
 							</div>
 						</div>
 					</div>

@@ -25,12 +25,12 @@ const Description: FunctionComponent<DescriptionProps> = () => {
 				variants={paragraph}
 				initial="hidden"
 				whileInView="visible"
-				viewport={{ once: true, amount: 0.9, margin: "-5px" }}
+				viewport={{ once: true, amount: 0.9, margin: "25px" }}
 				className="w-2/3 mt-10 text-xl font-body text-justify text-test"
 			>
-				<p>
+				<p className="text-justify text-xl text-test font-semibold">
 					Villa La Candelaria, es una casa serrana implantada sobre un lote de
-					460 m2, de 120 m2; construida en 2 plantas con ambientes comodos.- En
+					460 m2, de 120 m2; construida en 2 plantas con ambientes comodos. En
 					planta baja accedemos a un quincho equipado con cocina completa con
 					hogar a leña; baño completo y una habitación matrimonial, Wi-Fi;
 					Android TV.- En su planta alta se accede a un play room con juegos de

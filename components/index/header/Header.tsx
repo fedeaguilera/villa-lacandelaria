@@ -2,7 +2,7 @@ import { FC, Dispatch, SetStateAction } from "react";
 import { motion } from "framer-motion";
 import Menu from "./Menu";
 import MenuResponsive from "./MenuResponsive";
-import Logo from "../../../public/logo.png";
+import Logo from "../../../public/logo_header.png";
 import Image from "next/image";
 interface HeaderProps {
 	open: boolean;
@@ -17,7 +17,7 @@ const Header: FC<HeaderProps> = ({ open, setOpen }) => {
 			className="bg-secondary sm:h-[28vh] md:h-[15vh] h-[25vh] z-50 fixed w-full flex justify-evenly items-center flex-col md:flex-row sm:justify-center   text-primary "
 		>
 			<div className="object-contain text-center flex justify-center items-center w-full md:w-1/2 h-32 p-1 md:p-2 rounded-lg">
-				<Image src={Logo} alt="logo" width={325} height={95}></Image>
+				<Image src={Logo} alt="logo" width={226} height={61}></Image>
 			</div>
 			<MenuResponsive open={open} setOpen={setOpen} />
 			<Menu />
