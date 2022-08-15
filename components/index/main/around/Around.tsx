@@ -1,4 +1,3 @@
-import ModalImage from "@avidian/react-modal-image";
 import { AnimatePresence, motion, Variants } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
