@@ -11,6 +11,10 @@ export const images = [
 	"/casa_5.jpg",
 	"/casa_6.jpg",
 	"/casa_7.jpg",
+	"/casa_8.jpg",
+	"/casa_9.jpg",
+	"/casa_10.jpg",
+	"/casa_11.jpg",
 ];
 
 const settings = {
