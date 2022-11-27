@@ -12,9 +12,6 @@ export default function handler(
 	req: NextApiRequest,
 	res: NextApiResponse<Data>
 ) {
-	console.log(SENGRID);
-	console.log(process.env.SENGRID);
-
 	const { fullname, phone, email, message } = req.body;
 	sgMail.setApiKey(SENGRID);
 
